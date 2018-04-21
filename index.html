@@ -6,18 +6,16 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <style>
-      @font-face {
-    font-family: myFirstFont;
-    src: url(assets/fonts/fonts.ttf);
-}
-
+         @font-face {
+         font-family: myFirstFont;
+         src: url(assets/fonts/fonts.ttf);
+         }
          header.masthead {
          position: relative;
-    top: 33px;
+         top: 33px;
          }
          header img{opacity: 0.5;}
          /* header.masthead:after {
-        
          content: "";
          background-size: 200px 200px;
          position: absolute;/*important*/
@@ -38,7 +36,6 @@
          }
          /* HERE ENDS THE MAGIC */
          header .container {
-       
          }
          .card{
          margin-bottom:33px
@@ -49,55 +46,42 @@
          margin-bottom:50px;
          text-transform:uppercase;
          }
-		 
-		 .btn-xl {
-    padding: 10px 20px;
-    font-size: 20px;
-    border-radius: 10px;
-	min-width:250px;
-}
-
-
-.add_color{
-
-color:#4d8aaf;
-}
-
-
-     .header {
+         .btn-xl {
+         padding: 10px 20px;
+         font-size: 20px;
+         border-radius: 10px;
+         min-width:250px;
+         }
+         .add_color{
+         color:#4d8aaf;
+         }
+         .header {
          background-color: #e2e3e7;
          padding: 30px;
          text-align: center;
          font-family: good times;
          }
-		 
-		 .second_font{
-		  font-family: good times;
-		 }
-		 
-		 .nav->ul{
-		 
-		   list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-		 }
-
-
-
+         .second_font{
+         font-family: good times;
+         }
+         .nav->ul{
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         width: 200px;
+         background-color: #f1f1f1;
+         }
       </style>
-      <link href="http://services.webchin.org/web-fonts/web-font?font=droidnaskhregular" rel="stylesheet" type="text/css">
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
       <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
       <link rel="stylesheet" href="assets/css/custom.min.css">
       <link rel="icon" sizes="32x32" href="assets/img/favicon.ico">
    </head>
-   <body   class="rtl">
-
+   <body>
       <div class="header">
-        <div class="container"><img src="assets/img/logo.png" alt="..." height="90" width="90" class="img-thumbnail pull-left">
-         <img src="assets/img/agent.png" alt="..." height="90" width="90" class="img-thumbnail pull-right"></div>
+         <div class="container"><img src="assets/img/logo.png" alt="..." height="90" width="90" class="img-thumbnail pull-left">
+            <img src="assets/img/agent.png" alt="..." height="90" width="90" class="img-thumbnail pull-right">
+         </div>
          <h2>Welcome Travel Agent</h2>
          <p>Your balance  (....) usd</p>
       </div>
@@ -138,22 +122,23 @@ color:#4d8aaf;
                      </div>
                      <div class="col-md-12">
                         <form>
-						
-						
-						      <div class="form-row mt-3 second_font">
-          
-                 <a  href="index.html" class="btn btn-outline-dark ml-2" >Flight</a>
-				   <a   href="hotels.html" class="btn btn-outline-dark ml-2">Hotels</a>
-				     <a  href="tours.html" class="btn btn-outline-dark ml-2">Tours</a>
-					  <a  href="transfer.html" class="btn btn-outline-dark ml-2">Transfer</a>
-					    <a   href="visa.html" class="btn btn-outline-dark ml-2">Visa</a>
-                         </div>
+                           <div class="form-row mt-3 second_font">
+                              <a  href="index.html" class="btn btn-outline-dark ml-2" >Flight</a>
+                              <a   href="hotels.html" class="btn btn-outline-dark ml-2">Hotels</a>
+                              <a  href="tours.html" class="btn btn-outline-dark ml-2">Tours</a>
+                              <a  href="transfer.html" class="btn btn-outline-dark ml-2">Transfer</a>
+                              <a   href="visa.html" class="btn btn-outline-dark ml-2">Visa</a>
+                           </div>
                            <div class="form-row">
-                            
-                        <div class="form-group col-md-2">
-						  <label for="from_airport" class="col-form-label">Origin</label>
-                                 <input type="text" class="form-control" placeholder="&#xf176  Origin " style="font-family:Arial, FontAwesome" aria-label="Origin" aria-describedby="basic-addon1">
-                              </div>              <div class="form-group col-md-2">
+                              <div class="form-group col-md-2">
+                                 <label for="from_airport" class="col-form-label">Origin</label>
+                                 <div class="input-group">
+                                    <span class="input-group-addon"><i class="fas fa-address-card" data-fa-transform="rotate-30" style="transform: rotate(20deg);"></i>
+                                    </span>
+                                    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                                 </div>
+                              </div>
+                              <div class="form-group col-md-2">
                                  <label for="from_airport" class="col-form-label">Desination</label>
                                  <input type="text" class="form-control"  placeholder="&#xf175   Desination " style="font-family:Arial, FontAwesome"  aria-label="Origin" aria-describedby="basic-addon1">
                               </div>
@@ -166,10 +151,7 @@ color:#4d8aaf;
                                  <input class="form-control" type="text" placeholder="&#xf017   Origin " style="font-family:Arial, FontAwesome" readonly="">
                               </div>
                            </div>
-						   
-						   
-					
-                      <div class="form-row">
+                           <div class="form-row">
                               <div class="form-group col-md-2">
                                  <input type="text" class="form-control"   placeholder="&#xf072  Origin " style="font-family:Arial, FontAwesome" aria-label="Origin" aria-describedby="basic-addon1">
                               </div>
@@ -180,41 +162,33 @@ color:#4d8aaf;
                                  <input class="form-control" type="date" value="" id="ondate">
                               </div>
                               <div class="form-group col-md-2">
-                            <input class="form-control" type="text" placeholder="&#xf017   Origin " style="font-family:Arial, FontAwesome" readonly="">
-
+                                 <input class="form-control" type="text" placeholder="&#xf017   Origin " style="font-family:Arial, FontAwesome" readonly="">
                               </div>
-    
-     <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button" id="btn-plus"><i class="fa fa-minus add_color" aria-hidden="true"></i>
-                                    </button>
-                                    </span>
-                                    
-                                    <span class="input-group-btn ml-2">
-                                    <button class="btn btn-default" type="button" id="btn-minus"><i class="fa fa-plus add_color" aria-hidden="true"></i>
-                                    </button>
-                                    </span>
+                              <span class="input-group-btn">
+                              <button class="btn btn-default" type="button" id="btn-plus"><i class="fa fa-minus add_color" aria-hidden="true"></i>
+                              </button>
+                              </span>
+                              <span class="input-group-btn ml-2">
+                              <button class="btn btn-default" type="button" id="btn-minus"><i class="fa fa-plus add_color" aria-hidden="true"></i>
+                              </button>
+                              </span>
                            </div>
                            <div class="form-row">
                               <div class="form-group col-md-4">
                                  <label for="date" class="col-form-label pull-left"><b>Passengers</b></label>
-							
                                  <div class="input-group text-left ">
                                     <label class="control-label col-md-8  "><strong>Adults</strong><br> </label>
-                                   
-                                       <span class="input-group-btn">
-                                       <button class="btn btn-default" type="button" id="btn-plus"><i class="fa fa-minus" aria-hidden="true"></i>
-                                       </button>
-                                       </span>
-									   
-                                       <input type="text" class="form-control" name="qty" id="qty" value="0">
-									        
-                                       <span class="input-group-btn">
-                                       <button class="btn btn-default" type="button" id="btn-minus"><i class="fa fa-plus" aria-hidden="true"></i>
-                                       </button>
-                                       </span>
-                             
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button" id="btn-plus"><i class="fa fa-minus" aria-hidden="true"></i>
+                                    </button>
+                                    </span>
+                                    <input type="text" class="form-control" name="qty" id="qty" value="0">
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button" id="btn-minus"><i class="fa fa-plus" aria-hidden="true"></i>
+                                    </button>
+                                    </span>
                                  </div>
-								 <br>
+                                 <br>
                                  <div class="input-group text-left">
                                     <label class="control-label col-md-8"><strong>Children (2-11)</strong> </label>
                                     <span class="input-group-btn">
@@ -240,7 +214,6 @@ color:#4d8aaf;
                                     </button>
                                     </span>
                                  </div>
-							
                               </div>
                               <div class="border_fly"></div>
                               <div class="form-group col-md-3">
@@ -256,7 +229,7 @@ color:#4d8aaf;
                                  </div>
                               </div>
                               <div class="border_fly"></div>
-                        <div class="form-group col-md-4">
+                              <div class="form-group col-md-4">
                                  <label for="date" class="col-form-label pull-left"><b>Details</b></label>
                                  <div class="input-group">
                                     <label class="control-label ">Flexible Dates</label>
@@ -273,15 +246,11 @@ color:#4d8aaf;
                                     <input type="checkbox" class="form-control" name="qty" id="qty" value="1"> 
                                  </div>
                               </div>
-							  
-							  
-			
                               <div class="form-group">
                                  <button type="submit" class="btn btn-primary btn-xl">Search</button>
                               </div>
                            </div>
                      </div>
-               
                      </form>
                   </div>
                </div>
@@ -295,7 +264,6 @@ color:#4d8aaf;
             <div class="ptb-50">
                <h3 class="text-center text-dark">Latest Offer</h3>
             </div>
-           
             <div class="row">
                <div class="col-sm-4">
                   <div class="card">
@@ -333,24 +301,6 @@ color:#4d8aaf;
             </div>
          </div>
       </section>
-	  
-	  <style>
-	  .inputWithIcon{
-    position:relative;
-  }
-  
-  .inputWithIcon i{
-    position:absolute;
-    left:0;
-    top:8px;
-    padding:9px 8px;
-    color:#aaa;
-    transition:.3s;
-  }
-  
-	  
-	  </style>
-	  
       <footer class="my-5 pt-5 text-muted text-center text-small ">
          <ul class="list-inline">
             <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
@@ -362,11 +312,5 @@ color:#4d8aaf;
       </footer>
       <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script src="assets/js/bootstrap.bundle.min.js"></script>
-   
- 
-
-   
-   
    </body>
-
 </html>
