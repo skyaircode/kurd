@@ -122,96 +122,88 @@
                         <div class="pull-right">Favorite <i class="fa fa-caret-down" aria-hidden="true"></i></div>
                      </div>
                      <div class="col-md-12">
-                       
-                      	      <div class="form-row mt-3 second_font">
-          
-                 <a  href="index.html" class="btn btn-outline-dark ml-2" >Flight</a>
-				   <a   href="hotels.html" class="btn btn-outline-dark ml-2">Hotels</a>
-				     <a  href="tours.html" class="btn btn-outline-dark ml-2">Tours</a>
-					  <a  href="transfer.html" class="btn btn-outline-dark ml-2">Transfer</a>
-					    <a   href="visa.html" class="btn btn-outline-dark ml-2">Visa</a>
-                         </div>
-                           <div class="form-row">
-                              <div class="form-group col-md-4">
-                                 <label for="from_airport" class="col-form-label pull-left">Destination</label>
-                                 <input type="text" class="form-control" placeholder="&#xf002  Please Enter Destination" style="font-family:Arial, FontAwesome" aria-label="Origin" aria-describedby="basic-addon1">
+                        <div class="form-row mt-3 second_font">
+                           <a  href="index.html" class="btn btn-outline-dark ml-2" >Flight</a>
+                           <a   href="hotels.html" class="btn btn-outline-dark ml-2">Hotels</a>
+                           <a  href="tours.html" class="btn btn-outline-dark ml-2">Tours</a>
+                           <a  href="transfer.html" class="btn btn-outline-dark ml-2">Transfer</a>
+                           <a   href="visa.html" class="btn btn-outline-dark ml-2">Visa</a>
+                        </div>
+                        <div class="form-row">
+                           <div class="form-group col-md-4">
+                              <label for="from_airport" class="col-form-label pull-left">Destination</label>
+                              <input type="text" class="form-control" placeholder="&#xf002  Please Enter Destination" style="font-family:Arial, FontAwesome" aria-label="Origin" aria-describedby="basic-addon1">
+                           </div>
+                           <div class="form-group col-md-2">
+                              <label for="from_airport" class="col-form-label  pull-left">From</label>
+                              <input class="form-control"  type="date" value="" id="ondate">
+                           </div>
+                           <div class="form-group col-md-2">
+                              <label for="date" class="col-form-label pull-left">To</label>
+                              <input class="form-control"  type="date"  id="ondate">
+                           </div>
+                           <div class="form-group col-md-2">
+                              <label for="from_airport" class="col-form-label">Preferred Language</label>
+                              <input class="form-control" type="text" placeholder="&#xf0e5   English " style="font-family:Arial, FontAwesome">
+                           </div>
+                        </div>
+                        <div class="form-row">
+                           <div class="form-group col-md-4">
+                              <label for="date" class="col-form-label pull-left"><b>Passengers</b></label>
+                              <div class="input-group text-left ">
+                                 <label class="control-label col-md-8  "><strong>Adults</strong><br> </label>
+                                 <span class="input-group-btn">
+                                 <button class="btn btn-default" type="button" id="btn-plus"><i class="fa fa-minus" aria-hidden="true"></i>
+                                 </button>
+                                 </span>
+                                 <input type="text" class="form-control" name="qty" id="qty" value="0">
+                                 <span class="input-group-btn">
+                                 <button class="btn btn-default" type="button" id="btn-minus"><i class="fa fa-plus" aria-hidden="true"></i>
+                                 </button>
+                                 </span>
                               </div>
-                              <div class="form-group col-md-2">
-                                 <label for="from_airport" class="col-form-label  pull-left">From</label>
-                                 <input class="form-control"  type="date" value="" id="ondate">
+                              <br>
+                              <div class="input-group text-left">
+                                 <label class="control-label col-md-8"><strong>Children (2-11)</strong> </label>
+                                 <span class="input-group-btn">
+                                 <button class="btn btn-default" type="button" id="btn-plus"><i class="fa fa-minus" aria-hidden="true"></i>
+                                 </button>
+                                 </span>
+                                 <input type="text" class="form-control" name="qty" id="qty" value="0">
+                                 <span class="input-group-btn">
+                                 <button class="btn btn-default" type="button" id="btn-minus"><i class="fa fa-plus" aria-hidden="true"></i>
+                                 </button>
+                                 </span>
                               </div>
-                              <div class="form-group col-md-2">
-                                 <label for="date" class="col-form-label pull-left">To</label>
-                                 <input class="form-control"  type="date"  id="ondate">
-                              </div>
-                              <div class="form-group col-md-2">
-                                 <label for="from_airport" class="col-form-label">Preferred Language</label>
-                                 <input class="form-control" type="text" placeholder="&#xf0e5   English " style="font-family:Arial, FontAwesome">
+                              <br>
+                              <div class="input-group text-left ">
+                                 <label class="control-label col-md-8"><strong>Infants (<2)</strong><br> </label>
+                                 <span class="input-group-btn">
+                                 <button class="btn btn-default" type="button" id="btn-plus"><i class="fa fa-minus" aria-hidden="true"></i>
+                                 </button>
+                                 </span>
+                                 <input type="text" class="form-control" name="qty" id="qty" value="1">
+                                 <span class="input-group-btn">
+                                 <button class="btn btn-default" type="button" id="btn-minus"><i class="fa fa-plus" aria-hidden="true"></i>
+                                 </button>
+                                 </span>
                               </div>
                            </div>
-                           <div class="form-row">
-                              <div class="form-group col-md-4">
-                                 <label for="date" class="col-form-label pull-left"><b>Passengers</b></label>
-                                 <div class="input-group text-left ">
-                                    <label class="control-label col-md-8  "><strong>Adults</strong><br> </label>
-                                    <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button" id="btn-plus"><i class="fa fa-minus" aria-hidden="true"></i>
-                                    </button>
-                                    </span>
-                                    <input type="text" class="form-control" name="qty" id="qty" value="0">
-                                    <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button" id="btn-minus"><i class="fa fa-plus" aria-hidden="true"></i>
-                                    </button>
-                                    </span>
-                                 </div>
-                                 <br>
-                                 <div class="input-group text-left">
-                                    <label class="control-label col-md-8"><strong>Children (2-11)</strong> </label>
-                                    <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button" id="btn-plus"><i class="fa fa-minus" aria-hidden="true"></i>
-                                    </button>
-                                    </span>
-                                    <input type="text" class="form-control" name="qty" id="qty" value="0">
-                                    <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button" id="btn-minus"><i class="fa fa-plus" aria-hidden="true"></i>
-                                    </button>
-                                    </span>
-                                 </div>
-                                 <br>
-                                 <div class="input-group text-left ">
-                                    <label class="control-label col-md-8"><strong>Infants (<2)</strong><br> </label>
-                                    <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button" id="btn-plus"><i class="fa fa-minus" aria-hidden="true"></i>
-                                    </button>
-                                    </span>
-                                    <input type="text" class="form-control" name="qty" id="qty" value="1">
-                                    <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button" id="btn-minus"><i class="fa fa-plus" aria-hidden="true"></i>
-                                    </button>
-                                    </span>
-                                 </div>
+                           <div class="border_fly"></div>
+                           <div class="form-group col-md-3">
+                              <div class="form-group ">
+                                 <label for="date" class="col-form-label pull-left"><b>Mark Up %</b></label>
+                                 <input class="form-control" type="text" placeholder=" %2" id="ondate">
                               </div>
-
-                              <div class="border_fly"></div>
-                              <div class="form-group col-md-3">
-                                 <div class="form-group ">
-                                    <label for="date" class="col-form-label pull-left"><b>Mark Up %</b></label>
-                                    <input class="form-control" type="text" placeholder=" %2" id="ondate">
-                                 </div>
-                              </div>
-                             
-                             
                            </div>
-                      
-					  
-					  <div class="form-group pull-left">
-                                 <button type="submit" class="btn btn-primary btn-xl ">Search</button>
-                              </div>
+                        </div>
+                        <div class="form-group pull-left">
+                           <button type="submit" class="btn btn-primary btn-xl ">Search</button>
+                        </div>
                      </div>
-
+                  </div>
                </div>
             </div>
-         </div>
          </div>
       </header>
       <section style="margin-top: 19px;  font-family: good times; " >
@@ -256,19 +248,6 @@
             </div>
          </div>
       </section>
-      <style>
-         .inputWithIcon{
-         position:relative;
-         }
-         .inputWithIcon i{
-         position:absolute;
-         left:0;
-         top:8px;
-         padding:9px 8px;
-         color:#aaa;
-         transition:.3s;
-         }
-      </style>
       <footer class="my-5 pt-5 text-muted text-center text-small ">
          <ul class="list-inline">
             <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
