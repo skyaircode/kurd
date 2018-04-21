@@ -129,7 +129,21 @@
                               <a  href="transfer.html" class="btn btn-outline-dark ml-2">Transfer</a>
                               <a   href="visa.html" class="btn btn-outline-dark ml-2">Visa</a>
                            </div>
-                           <div class="form-row">
+						   
+						   <div class="">
+						   <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"> <div class="form-row">
                                 <div class="form-group col-md-2">
                               <label for="from_airport" class="col-form-label">Origin</label>
                                    <div class="input-group-prepend">
@@ -158,7 +172,15 @@
                                  <label for="from_airport" class="col-form-label">Hour</label>
                                  <input class="form-control" type="text" placeholder="&#xf017   Origin " style="font-family:Arial, FontAwesome" readonly="">
                               </div>
-                           </div>
+                           </div></div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+</div>
+						   
+						   
+						   </div>
+						   
+                          
                            <div class="form-row">
                               <div class="form-group col-md-2">
                                        <div class="input-group-prepend">
@@ -197,40 +219,40 @@
                               <div class="form-group col-md-4">
                                  <label for="date" class="col-form-label pull-left"><b>Passengers</b></label>
                                  <div class="input-group text-left ">
-                                    <label class="control-label col-md-8  "><strong>Adults</strong><br> </label>
+                                    <label class="control-label col-md-7 "><strong>Adults</strong><br> </label>
                                     <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button" id="btn-plus"><i class="fa fa-minus" aria-hidden="true"></i>
+                                    <button class="btn btn-default btn-number"  data-type="minus" data-field="quant[1]" type="button" id="btn-plus"><i class="fa fa-minus" aria-hidden="true"></i>
                                     </button>
                                     </span>
-                                    <input type="text" class="form-control" name="qty" id="qty" value="0">
+                                    <input type="text" name="quant[1]" class="form-control input-number text-center" value="1" min="1" max="10" >
                                     <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button" id="btn-minus"><i class="fa fa-plus" aria-hidden="true"></i>
+                                    <button class="btn btn-default btn-number" type="button" data-type="plus" data-field="quant[1]" id="btn-minus"><i class="fa fa-plus" aria-hidden="true"></i>
                                     </button>
                                     </span>
                                  </div>
                                  <br>
                                  <div class="input-group text-left">
-                                    <label class="control-label col-md-8"><strong>Children (2-11)</strong> </label>
+                                    <label class="control-label col-md-7"><strong>Children (2-11)</strong> </label>
                                     <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button" id="btn-plus"><i class="fa fa-minus" aria-hidden="true"></i>
+                                    <button class="btn btn-default btn-number"  data-type="minus" data-field="quant[2]" type="button" ><i class="fa fa-minus" aria-hidden="true"></i>
                                     </button>
                                     </span>
-                                    <input type="text" class="form-control" name="qty" id="qty" value="0">
+                                    <input type="text" name="quant[2]" class="form-control input-number text-center" value="0" min="1" max="10" >
                                     <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button" id="btn-minus"><i class="fa fa-plus" aria-hidden="true"></i>
+                                    <button class="btn btn-default btn-number" type="button" data-type="plus" data-field="quant[2]"><i class="fa fa-plus" aria-hidden="true"></i>
                                     </button>
                                     </span>
                                  </div>
                                  <br>
                                  <div class="input-group text-left ">
-                                    <label class="control-label col-md-8"><strong>Infants (<2)</strong><br> </label>
+                                    <label class="control-label col-md-7"><strong>Infants (<2)</strong><br> </label>
                                     <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button" id="btn-plus"><i class="fa fa-minus" aria-hidden="true"></i>
+                                    <button class="btn btn-default btn-number"  data-type="minus" data-field="quant[3]" type="button" ><i class="fa fa-minus" aria-hidden="true"></i>
                                     </button>
                                     </span>
-                                    <input type="text" class="form-control" name="qty" id="qty" value="1">
+                                    <input type="text" name="quant[3]" class="form-control input-number text-center" value="0" min="1" max="10" >
                                     <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button" id="btn-minus"><i class="fa fa-plus" aria-hidden="true"></i>
+                                    <button class="btn btn-default btn-number" type="button" data-type="plus" data-field="quant[3]"><i class="fa fa-plus" aria-hidden="true"></i>
                                     </button>
                                     </span>
                                  </div>
@@ -332,5 +354,83 @@
       </footer>
       <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script src="assets/js/bootstrap.bundle.min.js"></script>
+<script>
+
+$('.btn-number').click(function(e){
+    e.preventDefault();
+    
+    fieldName = $(this).attr('data-field');
+    type      = $(this).attr('data-type');
+    var input = $("input[name='"+fieldName+"']");
+    var currentVal = parseInt(input.val());
+    if (!isNaN(currentVal)) {
+        if(type == 'minus') {
+            
+            if(currentVal > input.attr('min')) {
+                input.val(currentVal - 1).change();
+            } 
+            if(parseInt(input.val()) == input.attr('min')) {
+                $(this).attr('disabled', true);
+            }
+
+        } else if(type == 'plus') {
+
+            if(currentVal < input.attr('max')) {
+                input.val(currentVal + 1).change();
+            }
+            if(parseInt(input.val()) == input.attr('max')) {
+                $(this).attr('disabled', true);
+            }
+
+        }
+    } else {
+        input.val(0);
+    }
+});
+$('.input-number').focusin(function(){
+   $(this).data('oldValue', $(this).val());
+});
+$('.input-number').change(function() {
+    
+    minValue =  parseInt($(this).attr('min'));
+    maxValue =  parseInt($(this).attr('max'));
+    valueCurrent = parseInt($(this).val());
+    
+    name = $(this).attr('name');
+    if(valueCurrent >= minValue) {
+        $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+    } else {
+        alert('Sorry, the minimum value was reached');
+        $(this).val($(this).data('oldValue'));
+    }
+    if(valueCurrent <= maxValue) {
+        $(".btn-number[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
+    } else {
+        alert('Sorry, the maximum value was reached');
+        $(this).val($(this).data('oldValue'));
+    }
+    
+    
+});
+$(".input-number").keydown(function (e) {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+             // Allow: Ctrl+A
+            (e.keyCode == 65 && e.ctrlKey === true) || 
+             // Allow: home, end, left, right
+            (e.keyCode >= 35 && e.keyCode <= 39)) {
+                 // let it happen, don't do anything
+                 return;
+        }
+        // Ensure that it is a number and stop the keypress
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
+    });
+	
+
+
+
+</script>
    </body>
 </html>
