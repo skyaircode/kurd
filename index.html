@@ -72,7 +72,7 @@
          background-color: #f1f1f1;
          }
       </style>
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
       <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
       <link rel="stylesheet" href="assets/css/custom.min.css">
       <link rel="icon" sizes="32x32" href="assets/img/favicon.ico">
@@ -130,18 +130,26 @@
                               <a   href="visa.html" class="btn btn-outline-dark ml-2">Visa</a>
                            </div>
                            <div class="form-row">
+                                <div class="form-group col-md-2">
+                              <label for="from_airport" class="col-form-label">Origin</label>
+                                   <div class="input-group-prepend">
+ 
+                                    <span class="input-group-text input-with-icon" id="basic-addon1">
+									<i class="fa fa-plane"  style="transform: rotate(320deg);" aria-hidden="true"></i>
+                                     </span>
+                     <input type="text" class="form-control input-with-icon" placeholder="Origin" aria-label="Desination" aria-describedby="basic-addon1">
+                            </div>
+							</div>
                               <div class="form-group col-md-2">
-                                 <label for="from_airport" class="col-form-label">Origin</label>
-                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="fas fa-address-card" data-fa-transform="rotate-30" style="transform: rotate(20deg);"></i>
-                                    </span>
-                                    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
-                                 </div>
-                              </div>
-                              <div class="form-group col-md-2">
-                                 <label for="from_airport" class="col-form-label">Desination</label>
-                                 <input type="text" class="form-control"  placeholder="&#xf175   Desination " style="font-family:Arial, FontAwesome"  aria-label="Origin" aria-describedby="basic-addon1">
-                              </div>
+                              <label for="from_airport" class="col-form-label">Desination</label>
+                                   <div class="input-group-prepend">
+ 
+                              <span class="input-group-text input-with-icon" id="basic-addon1">
+							  <i class="fa fa-plane " style="transform: rotate(65deg);" aria-hidden="true"></i>
+                             </span>
+                                 <input type="text" class="form-control input-with-icon" placeholder="Desination" aria-label="Desination" aria-describedby="basic-addon1">
+                            </div>
+							</div>
                               <div class="form-group col-md-2">
                                  <label for="date" class="col-form-label">Date</label>
                                  <input class="form-control"  placeholder="&#xf017   Origin " style="font-family:Arial, FontAwesome" type="date" value="" id="ondate">
@@ -153,10 +161,22 @@
                            </div>
                            <div class="form-row">
                               <div class="form-group col-md-2">
-                                 <input type="text" class="form-control"   placeholder="&#xf072  Origin " style="font-family:Arial, FontAwesome" aria-label="Origin" aria-describedby="basic-addon1">
+                                       <div class="input-group-prepend">
+ 
+                                    <span class="input-group-text input-with-icon" id="basic-addon1">
+									<i class="fa fa-plane"  style="transform: rotate(320deg);" aria-hidden="true"></i>
+                                     </span>
+                     <input type="text" class="form-control input-with-icon" placeholder="Origin" aria-label="Desination" aria-describedby="basic-addon1">
+                            </div>
                               </div>
                               <div class="form-group col-md-2">
-                                 <input type="text" class="form-control"  placeholder="&#xf072   Desination " style="font-family:Arial, FontAwesome" aria-label="Origin" aria-describedby="basic-addon1">
+                                <div class="input-group-prepend">
+ 
+                              <span class="input-group-text input-with-icon" id="basic-addon1">
+							  <i class="fa fa-plane " style="transform: rotate(65deg);" aria-hidden="true"></i>
+                             </span>
+                                 <input type="text" class="form-control input-with-icon" placeholder="Desination" aria-label="Desination" aria-describedby="basic-addon1">
+                            </div>
                               </div>
                               <div class="form-group col-md-2">
                                  <input class="form-control" type="date" value="" id="ondate">

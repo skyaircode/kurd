@@ -269,3 +269,12 @@ margin: 21px;
 
   margin-left: :330px;
 }
+	     span.input-with-icon{
+         border-right: 0;
+         background: 0;
+         border-radius: 0
+       }
+       input.input-with-icon{
+         border-left: 0;
+         border-radius: 0
+       }
