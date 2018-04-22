@@ -76,6 +76,7 @@
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
       <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
       <link rel="stylesheet" href="assets/css/custom.min.css">
+	  <link rel="stylesheet" href="assets/css/bootstrap-datepicker3.min.css">
       <link rel="icon" sizes="32x32" href="assets/img/favicon.ico">
    </head>
    <body   class="rtl">
@@ -137,11 +138,22 @@
                                  </div>
                                  <div class="form-group col-md-2">
                                     <label for="from_airport" class="col-form-label pull-left">Check In</label>
-                                    <input class="form-control"  type="date">
+                                <div class="input-group date" data-provide="datepicker">
+                            <input type="text" class="form-control">
+                      <div class="input-group-addon">
+                  <span class="glyphicon glyphicon-th"></span>
+                                     </div>
+                                      </div>
+
                                  </div>
                                  <div class="form-group col-md-2">
                                     <label for="date" class="col-form-label pull-left">Check Out</label>
-                                    <input class="form-control"  type="date">
+                                   <div class="input-group date" data-provide="datepicker">
+                            <input type="text" class="form-control">
+                      <div class="input-group-addon">
+                  <span class="glyphicon glyphicon-th"></span>
+                                     </div>
+                                      </div>
                                  </div>
                                  <div class="form-group col-md-2">
                                     <label for="from_airport" class="col-form-label">Total Nights</label>
@@ -368,6 +380,7 @@
       </footer>
       <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script src="assets/js/bootstrap.bundle.min.js"></script>
+	  <script src="assets/js/bootstrap-datepicker.js"></script>
 	  <script>
 	  
 $('#mylist').change(function(){
@@ -432,6 +445,8 @@ $(contentToRemove).remove();
 }
 
 });
+
+$('.datepicker').datepicker();
 	  
 	  </script>
    </body>

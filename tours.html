@@ -74,6 +74,7 @@
       </style>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
       <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
+	  <link rel="stylesheet" href="assets/css/bootstrap-datepicker3.min.css">
       <link rel="stylesheet" href="assets/css/custom.min.css">
       <link rel="icon" sizes="32x32" href="assets/img/favicon.ico">
    </head>
@@ -135,11 +136,21 @@
                            </div>
                            <div class="form-group col-md-2">
                               <label for="from_airport" class="col-form-label  pull-left">From</label>
-                              <input class="form-control"  type="date" value="" id="ondate">
+                              <div class="input-group date" data-provide="datepicker">
+                            <input type="text" class="form-control">
+                      <div class="input-group-addon">
+                  <span class="glyphicon glyphicon-th"></span>
+                                     </div>
+                                      </div>
                            </div>
                            <div class="form-group col-md-2">
                               <label for="date" class="col-form-label pull-left">To</label>
-                              <input class="form-control"  type="date"  id="ondate">
+                             <div class="input-group input-daterange">
+    <input type="text" class="form-control" value="2012-04-05">
+    <div class="input-group-addon">to</div>
+    <input type="text" class="form-control" value="2012-04-19">
+</div>
+
                            </div>
                            <div class="form-group col-md-2">
                               <label for="from_airport" class="col-form-label">Preferred Language</label>
@@ -258,7 +269,7 @@
       </footer>
       <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script src="assets/js/bootstrap.bundle.min.js"></script>
-	  
+	   <script src="assets/js/bootstrap-datepicker.js"></script>
 	  <script>
 
 $('.btn-number').click(function(e){
@@ -333,9 +344,10 @@ $(".input-number").keydown(function (e) {
         }
     });
 	
-
-
-
+$('.input-daterange input').each(function() {
+    $(this).datepicker('clearDates');
+});
+});
 </script>
    </body>
 </html>
