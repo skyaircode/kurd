@@ -153,15 +153,56 @@
                                     <input class="form-control" style="font-family:Arial, FontAwesome" aria-label="Origin" aria-describedby="basic-addon1" placeholder="&#xf236 Room " type="text">
                                  </div>
                                  <div class="form-group col-md-2">
-                                    <input type="number" class="form-control"  placeholder="&#xf1ae   Adults (+12) "  min="0" max="9"  style="font-family:Arial, FontAwesome" aria-label="Origin" aria-describedby="basic-addon1">
+                                    <input type="number" class="form-control"  placeholder="&#xf183    Adults (+12) "  min="0" max="9"  style="font-family:Arial, FontAwesome" aria-label="Origin" aria-describedby="basic-addon1">
                                  </div>
                                  
+                              
+                           
+                                
+							
+								 
+								
+								
+                              </div>
+							  
+							  
+
+							  
+							  
+							  
+							  <div class="form-row">
+                                
+                                       
                                  <div class="form-group col-md-2">
-                                    <input class="form-control" type="number" placeholder="&#xf0c0 Children (0-11) " min="0" max="9"  style="font-family:Arial, FontAwesome" >
+								 
+								 
+								 <div class="input-group-prepend">
+ 
+                                    <span class="input-group-text input-with-icon" id="basic-addon1">
+									<i class="fa fa-child"  aria-hidden="true"></i>
+   
+                                     </span>
+                      <select id="mylist" class="custom-select">
+                                      <option selected="">children (0-11)</option>
+                                        <option value="1">1 child</option>
+                                     <option value="2">2 child</option>
+                                       <option value="3">3 child</option>
+                                         <option value="4">4 child</option>
+                                             <option value="5">5 child</option>
+                                        
+  
+                                              </select>
+                            </div>
+                                  
                                  </div>
-                                 <div class="form-group col-md-2">
-                                    <input class="form-control" type="text" placeholder="Children Age" >
+                               
+                                 	
+								 
+								 
+								<div id="age" ></div>
+                                  
                                  </div>
+                            
                                  <div class="form-group col-md-2">
                                  <span class="input-group-btn">
                                  <button class="btn btn-default" type="button" id="btn-plus"><i class="fa fa-minus add_color" aria-hidden="true"></i>
@@ -309,5 +350,68 @@
       </footer>
       <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script src="assets/js/bootstrap.bundle.min.js"></script>
+	  <script>
+	  
+$('#mylist').change(function(){
+  
+switch ($(this).val()) {
+    case '1':
+       $('#age').append(' <div class="col-md-2"><select class="custom-select" id="myInput"><option value="1">  1 year old</option><option value="2">  2 year old</option><option value="3">  3 year old</option><option value="4">  4 year old</option><option value="5">  5 year old</option><option value="6">  6 year old</option><option value="7"> 7 year old</option><option value="8">  8 year old</option><option value="9">  9 year old</option><option value="10"> 10 year old</option><option value="11">  11 year old</option></select></div>');
+        
+        break;
+    case '2':
+            $('#myInput').remove();
+              $('#age').append(' <div class="col"><select  class="custom-select"  id="myInput"><option value="1">  1 year old</option><option value="2">  2 year old</option><option value="3">  3 year old</option><option value="4">  4 year old</option><option value="5">  5 year old</option><option value="6">  6 year old</option><option value="7"> 7 year old</option><option value="8">  8 year old</option><option value="9">  9 year old</option><option value="10"> 10 year old</option><option value="11">  11 year old</option></select></div>');
+               $('#age').append('<div class="col"><select class="custom-select"   id="myInput"><option value="1">  1 year old</option><option value="2">  2 year old</option><option value="3">  3 year old</option><option value="4">  4 year old</option><option value="5">  5 year old</option><option value="6">  6 year old</option><option value="7"> 7 year old</option><option value="8">  8 year old</option><option value="9">  9 year old</option><option value="10"> 10 year old</option><option value="11">  11 year old</option></select></div>');
+        
+        break;
+    case '3':
+          
+var contentToRemove = document.querySelectorAll("#myInput");
+$(contentToRemove).remove(); 
+
+              $('#age').append('<div class="col"><select class="custom-select"  id="myInput"><option value="1">  1 year old</option><option value="2">  2 year old</option><option value="3">  3 year old</option><option value="4">  4 year old</option><option value="5">  5 year old</option><option value="6">  6 year old</option><option value="7"> 7 year old</option><option value="8">  8 year old</option><option value="9">  9 year old</option><option value="10"> 10 year old</option><option value="11">  11 year old</option></select></div>');
+  $('#age').append('<div class="col"><select class="custom-select"  id="myInput"><option value="1">  1 year old</option><option value="2">  2 year old</option><option value="3">  3 year old</option><option value="4">  4 year old</option><option value="5">  5 year old</option><option value="6">  6 year old</option><option value="7"> 7 year old</option><option value="8">  8 year old</option><option value="9">  9 year old</option><option value="10"> 10 year old</option><option value="11">  11 year old</option></select></div>');
+  $('#age').append('<div class="col"><select class="custom-select"  id="myInput"><option value="1">  1 year old</option><option value="2">  2 year old</option><option value="3">  3 year old</option><option value="4">  4 year old</option><option value="5">  5 year old</option><option value="6">  6 year old</option><option value="7"> 7 year old</option><option value="8">  8 year old</option><option value="9">  9 year old</option><option value="10"> 10 year old</option><option value="11">  11 year old</option></select></div>');
+  break;
+   
+   
+   
+  case '4':
+          
+var contentToRemove = document.querySelectorAll("#myInput");
+$(contentToRemove).remove(); 
+
+      $('#age').append('<div class="col-md-2"><select class="custom-select"  id="myInput"><optionoption value="1">  1 year old</option><option value="2">  2 year old</option><option value="3">  3 year old</option><option value="4">  4 year old</option><option value="5">  5 year old</option><option value="6">  6 year old</option><option value="7"> 7 year old</option><option value="8">  8 year old</option><option value="9">  9 year old</option><option value="10"> 10 year old</option><option value="11">  11 year old</option></select></div>');
+  $('#age').append('<div class="col"><select class="custom-select" id="myInput"><option value="1">  1 year old</option><option value="2">  2 year old</option><option value="3">  3 year old</option><option value="4">  4 year old</option><option value="5">  5 year old</option><option value="6">  6 year old</option><option value="7"> 7 year old</option><option value="8">  8 year old</option><option value="9">  9 year old</option><option value="10"> 10 year old</option><option value="11">  11 year old</option></select></div>');
+  $('#age').append('<div class="col"><select class="custom-select"  id="myInput"><option value="1">  1 year old</option><option value="2">  2 year old</option><option value="3">  3 year old</option><option value="4">  4 year old</option><option value="5">  5 year old</option><option value="6">  6 year old</option><option value="7"> 7 year old</option><option value="8">  8 year old</option><option value="9">  9 year old</option><option value="10"> 10 year old</option><option value="11">  11 year old</option></select></div>');
+   $('#age').append('<div class="col"><select class="custom-select"  id="myInput"><option value="1">  1 year old</option><option value="2">  2 year old</option><option value="3">  3 year old</option><option value="4">  4 year old</option><option value="5">  5 year old</option><option value="6">  6 year old</option><option value="7"> 7 year old</option><option value="8">  8 year old</option><option value="9">  9 year old</option><option value="10"> 10 year old</option><option value="11">  11 year old</option></select></div>');
+  break;
+  
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+        default:
+   
+      
+var contentToRemove = document.querySelectorAll("#myInput");
+$(contentToRemove).remove(); 
+}
+
+});
+	  
+	  </script>
    </body>
 </html>
