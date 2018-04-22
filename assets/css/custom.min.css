@@ -1,3 +1,8 @@
+  @font-face {
+         font-family:good times;
+         src: url(../fonts/fonts.ttf);
+         }
+
 .splash,
 .splash .sponsor a,
 .splash h1 {
@@ -278,3 +283,28 @@ margin: 21px;
          border-left: 0;
          border-radius: 0
        }
+.vl {
+    border-left: 1px solid #eee;
+    height: 70%;
+    margin: auto;
+}
+.border_fly-1{
+    border-right:1px solid #ddd;
+margin: 0  5px;
+}
+.btn-group-custom{
+    width: 100%;
+}
+.btn-custom{
+    width: 100%;
+}
+.btn{
+    border-radius: 0
+}
+.cheap-title{
+    padding: 5px;
+    background: red;
+    color: #fff;
+    text-align: center;
+    font-family: good times;
+}

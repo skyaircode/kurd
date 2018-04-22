@@ -30,7 +30,7 @@
   bottom: -4px;
   left: -4px;
   content: "";
-  background: #6ba1ad;
+  background: #4d8aaf;
   border-radius: inherit;
 }
 .asRange .asRange-pointer:after {
@@ -65,8 +65,8 @@
   text-align: center;
   background-color: #5d5c58;
   border: 1px solid #5d5c58;
-  border-radius: 3px; 
-  -webkit-transition: opacity .3s ease-in-out 0s; 
+  border-radius: 3px;
+  -webkit-transition: opacity .3s ease-in-out 0s;
   transition: opacity .3s ease-in-out 0s;
 }
 .asRange .asRange-pointer .asRange-tip:before {
