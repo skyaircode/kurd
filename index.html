@@ -132,8 +132,8 @@
 						   
 						   <div class="">
 		
-<div class="tab-content" id="pills-tabContent">
- <div class="form-row">
+                        <div class="choeserow">
+                         <div class="form-row rows">
                                 <div class="form-group col-md-2">
                               <label for="from_airport" class="col-form-label">Origin</label>
                                    <div class="input-group-prepend">
@@ -170,7 +170,7 @@
 						   </div>
 						   
                           
-                           <div class="form-row">
+                           <div class="form-row rows">
                               <div class="form-group col-md-2">
                                        <div class="input-group-prepend">
  
@@ -196,15 +196,15 @@
                                  <input class="form-control" type="text" placeholder="&#xf017   Origin " style="font-family:Arial, FontAwesome" readonly="">
                               </div>
                               <span class="input-group-btn">
-                              <button class="btn btn-default" type="button" id="btn-plus"><i class="fa fa-minus add_color" aria-hidden="true"></i>
+                              <button class="btn btn-default" type="button" id="btn-minus"><i class="fa fa-minus add_color" aria-hidden="true"></i>
                               </button>
                               </span>
                               <span class="input-group-btn ml-2">
-                              <button class="btn btn-default" type="button" id="btn-minus"><i class="fa fa-plus add_color" aria-hidden="true"></i>
+                              <button class="btn btn-default" type="button" id="btn-plus"><i class="fa fa-plus add_color" aria-hidden="true"></i>
                               </button>
                               </span>
                            </div>
-                           <div class="form-row">
+                           <div class="form-row ">
                               <div class="form-group col-md-4">
                                  <label for="date" class="col-form-label pull-left"><b>Passengers</b></label>
                                  <div class="input-group text-left ">
@@ -421,5 +421,36 @@ $(".input-number").keydown(function (e) {
 
 
 </script>
+  <script type="text/javascript">
+        $(document).ready(function() {
+
+            $("#btn-plus").click(function() {
+               
+
+                $('.choeserow').last().append('<div class="form-row rows"><div class="form-group col-md-2"> <div class="input-group-prepend"><span class="input-group-text input-with-icon" id="basic-addon1"><i class="fa fa-plane" style="transform: rotate(360deg);" aria-hidden="true"></i></span><input type="text" class="form-control input-with-icon" placeholder="Origin" aria-label="Desination" aria-describedby="basic-addon1"></div></div><div class="form-group col-md-2"><div class="input-group-prepend"><span class="input-group-text input-with-icon" id="basic-addon1"><i class="fa fa-plane " style="transform: rotate(65deg);" aria-hidden="true"></i> </span> <input type="text" class="form-control input-with-icon" placeholder="Desination" aria-label="Desination" aria-describedby="basic-addon1"> </div></div><div class="form-group col-md-2"><input class="form-control" type="date" value="" id="ondate"></div><div class="form-group col-md-2"><input class="form-control" type="text" placeholder="   Origin " style="font-family:Arial, FontAwesome" readonly=""></div></div>'
+                  );  
+                  var numItems = $('.rows').length;
+
+                 if(numItems > 1 ){
+               $('#btn-minus').show();
+            }
+           // alert(numItems);
+            
+            });
+
+           
+
+            $("#btn-minus").click(function() {
+             //  alert('af');
+               $('.rows').first().remove();
+               var numItems = $('.rows').length;
+
+             if(numItems < 2 ){
+               $('#btn-minus').hide();
+            }
+
+        });
+        });
+    </script>
    </body>
 </html>
