@@ -2495,7 +2495,7 @@ fieldset:disabled a.btn {
     color: #000;
     background-color: #ffcc00;
     border-color: #ffcc00;
-    font-size: 20px;
+    /* font-size: 20px; */
     font-family: good times;
 }
 

@@ -1,61 +1,34 @@
-<!DOCTYPE html>
-<html>
-<head>
-     <link href="http://services.webchin.org/web-fonts/web-font?font=droidnaskhregular" rel="stylesheet" type="text/css">
-      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
-<title>Icon inside Input Field - Demo Preview</title>
-<meta content="noindex, nofollow" name="robots">
-<link href="css/formicon.css" rel="stylesheet">
-</head>
-<!-- Include CSS File Here -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
+         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+            <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.js"></script>
+      <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+  <script src="https://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<p>
+  <label for="amount">Date range:</label>
+  <input type="text" id="amount" style="border: 0; color: #f6931f; font-weight: bold;" size="100"/>
+</p>
+ 
+<div id="slider-range"></div>
 
-<div class="container">
-  <h3>Input Groups</h3>
-  <p>The .input-group class is a container to enhance an input by adding an icon, text or a button in front or behind it as a "help text".</p>
-  <p>The .input-group-addon class attaches an icon or help text next to the input field.</p>
+<script type="text/javascript">
   
-  <form>
-    <div class="input-group">
-      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-      <input id="email" type="text" class="form-control" name="email" placeholder="Email">
-    </div>
-    <div class="input-group">
-      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-      <input id="password" type="password" class="form-control" name="password" placeholder="Password">
-    </div>
-    <br>
-    <div class="input-group">
-      <span class="input-group-addon">Text</span>
-      <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
-    </div>
-  </form>
-  <br>
+    $(function() {
+    $( "#slider-range" ).slider({
+      range: true,
+      min: new Date('2014.01.01').getTime() / 1000,
+      max: new Date('2014.02.01').getTime() / 1000,
+      step: 86400,
+      values: [ new Date('2013.01.01').getTime() / 1000, new Date('2013.02.01').getTime() / 1000 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( (new Date(ui.values[ 0 ] *1000).toDateString() ) + " - " + (new Date(ui.values[ 1 ] *1000)).toDateString() );
+      }
+    });
+    $( "#amount" ).val( (new Date($( "#slider-range" ).slider( "values", 0 )*1000).toDateString()) +
+      " - " + (new Date($( "#slider-range" ).slider( "values", 1 )*1000)).toDateString());
+  });
 
-  <p>It can also be used on the right side of the input:</p>
-  <form>
-    <div class="input-group">
-      <input id="email" type="text" class="form-control" name="email" placeholder="Email">
-      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>   
-    </div>
-    <div class="input-group">
-      <input id="password" type="password" class="form-control" name="password" placeholder="Password">
-      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-    </div>
-  </form>
-</div>
+</script>
 
-</body>
-</html>
 
