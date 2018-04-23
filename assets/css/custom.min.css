@@ -297,6 +297,10 @@ margin: 0  5px;
 }
 .btn-custom{
     width: 100%;
+    background: #4d8aaf;
+}
+.btn-custom:hover{
+    background: 
 }
 .btn{
     border-radius: 0
@@ -307,4 +311,17 @@ margin: 0  5px;
     color: #fff;
     text-align: center;
     font-family: good times;
+}
+.chepest{
+    border:3px solid red;
+    border-bottom: 0;
+}
+
+.load-more{
+    margin-top: -10px;
+    display: block;
+    text-align: center;
+    background: #fff;
+    padding: 5px;
+    color: #4d8aaf;
 }
